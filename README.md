@@ -26,8 +26,15 @@ https://github.com/users/joycecrds/projects/3/views/1
 ```
 Visualização Dashboard de Compras :wink: 
 ```
-https://app.powerbi.com/view?r=eyJrIjoiYTA1ZTlmYWItMWVmNy00NGE5LTgwNTktNmJhMGIwODZmMjhlIiwidCI6IjFmZjZiYzdkLTU2ZmItNGY1Zi1hYmFlLTI4NjVhN2Q2YjlkMyJ9
+https://app.powerbi.com/view?r=eyJrIjoiYTA1ZTlmYWItMWVmNy00NGE5LTgwNTktNmJhMGIwODZmMjhlIiwidCI6IjFmZjZiYzdkLTU2ZmItNGY1Zi1hYmFlLTI4NjVhN2Q2YjlkMyJ9&pageName=ReportSection2988e9f4e75b8574833e
 ```
+## Modelo semântico
+
+Banco de dados utilizado para a primeira fase do projeto (Microsoft Excel). </p>
+Modelo semântico da primeira fase representada na imagem abaixo. </p>
+
+![imagem semantico](https://github.com/joycecrds/Gestaocompra/assets/160512672/2c1a8b3a-14fd-4e34-bd41-1298529c041c)
+
 
 ## Funcionalidades
 ### 1. Indicador de Entrega
@@ -50,8 +57,11 @@ Indicado_entrega = IF(
 ```
 
  $${\color{Orange}DEMONSTRATIVO \space DE \space ENTREGA}$$
+ <div align="center">
 
-![image](https://github.com/joycecrds/Gestaocompra/assets/160512672/323014b5-9cc5-461e-bd09-0621f79c63d8)
+<img src="/imagem/gif/ind_entrega.gif">
+
+</div>
 
 ### 2. Lead Time
 Indicador para medir o tempo em que a compra é requisitada, desde a solicitação de compra ao recebimento da mercadoria.</p>
@@ -74,9 +84,12 @@ lead_time_Sol_rec = AVERAGEX(
     DATEDIFF(mov_compras[Data da Solicitação], mov_compras[Data Recebimento],DAY)
 )
 ```
- $${\color{Orange}LEAD\space TIME}$$
+ $${\color{Orange}DEMONSTRAÇÃO\space LEAD\space TIME}$$
+ <div align="center">
  
-![image](https://github.com/joycecrds/Gestaocompra/assets/160512672/5d323570-315b-4493-a05c-b0d9e53f9e8f)
+<img src="/imagem/gif/Leadtime.gif">
+
+</div>
 
 ### 3. Ranking Melhores fornecedores
 Ranking dos melhores fornecedores é essencial para a seleção estratégica de parceiros de negócios.</p>
@@ -153,7 +166,12 @@ CALCULATE(
 )
 ```
 
-****INCLUIR ANIMAÇÃO DO GRAFICO **** </p>
+ $${\color{Orange}DEMONSTRAÇÃO\space RANKING\space DOS \space MELHORES \space FORNECEDORES}$$
+  <div align="center">
+ 
+<img src="/imagem/gif/ranking.gif">
+
+ </div>
 
 ### 4. Volumetria Pedidos de compra
 Apresentação da volumetria dos pedidos de compras classificados Urgentes e não urgentes.</p>
@@ -170,8 +188,10 @@ COUNTROWS(FILTER(mov_compras, mov_compras[Emergencial] = "Pedido emergencial"))
 
 ```
  $${\color{Orange}DEMONSTRAÇÃO\space VOLUMETRIA \space DE \space PEDIDOS}$$
- 
-![image](https://github.com/joycecrds/Gestaocompra/assets/160512672/8a8d6bc3-ccf8-427d-aed9-8427c44b4ab0)
+ <div align="center">
+     
+<img src="/imagem/gif/Vol_Pedido.gif">
+</div>
 
 ## Referências
 > Lead Time: como calcular e guia prático para otimizar o indicador _ _ _ _ _ _  https://www.site.moki.com.br/post/lead-time#:~:text=C%C3%A1lculo%3A%20Lead%20Time%20%3D%20tempo%20de,produ%C3%A7%C3%A3o%20e%20entrega%20de%20produtos. </p>
