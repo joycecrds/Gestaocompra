@@ -24,6 +24,11 @@ Requisitos
 ```
 https://github.com/users/joycecrds/projects/3/views/1
 ```
+Visualização Dashboard de Compras
+```
+https://app.powerbi.com/view?r=eyJrIjoiYTA1ZTlmYWItMWVmNy00NGE5LTgwNTktNmJhMGIwODZmMjhlIiwidCI6IjFmZjZiYzdkLTU2ZmItNGY1Zi1hYmFlLTI4NjVhN2Q2YjlkMyJ9
+```
+
 
 ### Funcionalidades
 1.  Indicador de Entrega
@@ -69,8 +74,12 @@ https://github.com/users/joycecrds/projects/3/views/1
    ****INCLUIR O FONTE DO DAX DE CADA MEDIDA****
 
 
-4.  Volumetria média Pedido Emergencial
-<p>O indicador de Volumetria de Pedidos Emergenciais permite identificar tendências ao longo do tempo. Se houver um aumento significativo no número de pedidos emergenciais, isso pode indicar problemas na cadeia de suprimentos, como falta de planejamento, falhas de fornecimento ou problemas de qualidade.</p>
+4.  Volumetria Pedidos de compra
+<p>Apresentação de volume de pedidos de compras classificados Urgentes e não urgentes.</p>
+<p>O indicador Pedidos Emergencial permite identificar as tendências ao longo do tempo. Se houver um aumento significativo no número de pedidos emergenciais, indicando problemas na cadeia de suprimentos, como falta de planejamento, falhas de fornecimento ou problemas de qualidade.</p>
+<p>Para mostar a demonstração foi criada medida em DAX, utilizando a função COUNTROWS. Contagem de pedidos "comuns" e pedidos emergenciais</p>
+
+
 
 
 
